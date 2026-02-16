@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html>
 <head>
   <base target="_top">
   <title>Noble Computer | Feedback Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <link rel="icon" type="image/png" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" href="favicon_io/favicon-32x32.png">
 
   
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
@@ -494,10 +495,12 @@
         <p class="form-subtitle">Student Feedback & Quality Review Form</p>
       </div>
       
-      <form id="feedbackForm" 
-      action="https://docs.google.com/forms/d/e/1FAIpQLScOD8RR07LN2GKfrF-qKOq299-kvJKphif75x11Sr9E-NAMeQ/formResponse"
-      method="POST"
-      target="hidden_iframe">
+      <form id="feedbackForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScOD8RR07LN2GKfrF-qKOq299-kvJKphif75x11Sr9E-NAMeQ/formResponse" method="POST">
+        <input type="hidden" name="fvv" value="1">
+<input type="hidden" name="draftResponse" value="">
+<input type="hidden" name="pageHistory" value="0">
+<input type="hidden" name="fbzx" value="1271047527177834934">
+
 
 
         <!-- Student Info -->

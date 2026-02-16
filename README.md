@@ -4,7 +4,7 @@
   <title>Noble Computer | Feedback Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
-  <link rel="icon" type="image/png" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png">
 
   
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">

@@ -494,7 +494,7 @@
         <p class="form-subtitle">Student Feedback & Quality Review Form</p>
       </div>
       
-      <form id="feedbackForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScOD8RR07LN2GKfrF-qKOq299-kvJKphif75x11Sr9E-NAMeQ/formResponse" method="POST">
+      <form id="feedbackForm">
         <input type="hidden" name="fvv" value="1">
 <input type="hidden" name="draftResponse" value="">
 <input type="hidden" name="pageHistory" value="0">
@@ -642,6 +642,36 @@
       }, 1000);
     });
     </script>
+
+<script>
+  document.getElementById("feedbackForm").addEventListener("submit", function(e){
+    e.preventDefault();
+  
+    const form = e.target;
+    const data = new FormData(form);
+  
+    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLScOD8RR07LN2GKfrF-qKOq299-kvJKphif75x11Sr9E-NAMeQ/formResponse", {
+      method: "POST",
+      mode: "no-cors",
+      body: data
+    });
+  
+    // UI feedback
+    document.getElementById("submitBtn").innerHTML = "✔ Submitted";
+    document.getElementById("submitBtn").disabled = true;
+  
+    setTimeout(() => {
+      form.reset();
+      document.getElementById("submitBtn").innerHTML = "Submit Feedback";
+      document.getElementById("submitBtn").disabled = false;
+    }, 1000);
+  });
+  </script>
+  
+  
+
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
     
 </body>
 </html>
